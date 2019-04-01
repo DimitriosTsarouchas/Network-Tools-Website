@@ -1,0 +1,148 @@
+.jumbotron {
+  background-image: linear-gradient(to right bottom,
+    rgba(0,0,0, 0.8),
+    rgba(0,0,0, 0.1)),
+    url(images/background-photo.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+  position: relative;  
+  height: 750px;
+  border-radius: 0;
+}
+.logo {
+  width: 75px;
+  height: 80px;
+}
+.featured {
+  color: #ffffff;
+  text-shadow: 1px 1px 5px#000000;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.featured h1 {
+  padding-top: 60px;
+  font-size: 4em;
+}
+
+.featured h2 {
+  font-size: 3em;
+}
+
+.featured p {
+  font-size: 1.5em;
+  padding-top: 20px;
+}
+
+.featured .btn {
+  text-shadow: 0px 0px 0px #000000;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-right: 20px;
+  padding: .8em;
+  width: 200px;
+}
+.carousel-container {
+  background: linear-gradient(to top left,#eeeeee 80%, #ffffff);
+  padding: 2%;
+}
+.carousel img {
+  max-height: 900px;
+  max-width: 450px;
+  margin: 0 auto;
+}
+.carousel-indicators li{
+  background-color: #ce2626;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: rgba(0,0,0,.25);
+}
+h3 {
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+}
+.usage-tips {
+  padding: 10%; 
+  border: none;
+}
+.trial {
+  text-align: center;
+  padding: 20px 0 40px 0;
+  background: linear-gradient(to top left,#eeeeee 80%, #ffffff);
+}
+.trial img {
+  width: 200px;
+  height: 70px;
+  margin: 20px;
+}
+.footer {
+  background-color: #cccccc;
+  font-size: 15px;
+  padding: 10px 0;
+}
+
+@media(min-width: 480px) and (max-width: 768px) {
+  .jumbotron {
+    height: 450px;
+    margin: 0;
+  }
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+  .featured {
+    text-align: center;
+  }
+  .featured h1 {
+    padding-top: 20px;
+    font-size: 28px;
+  }
+  .featured h2 {
+    font-size: 22px;
+  }
+  .featured p {
+    font-size: 16px;
+    padding-top: 5px;
+  }
+  .featured .btn {
+    font-size: 16px;
+    margin-top: 5px;
+    width: 160px;
+  }
+}
+
+@media(max-width: 480px) {
+  .jumbotron {
+    height: 450px;
+    margin: 0;
+  }
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+  .featured {
+    text-align: center;
+  }
+  .featured h1 {
+    padding-top: 10px;
+    font-size: 25px;
+  }
+  .featured h2 {
+    font-size: 22px;
+  }
+  .featured p {
+    font-size: 14px;
+    padding-top: 5px;
+  }
+  .featured .btn {
+    font-size: 14px;
+    margin-top: 5px;
+    width: 150px;
+  }
+  .trial img {
+    width: 100px;
+    height: 35px;
+    margin: 10px;
+  }
+}
