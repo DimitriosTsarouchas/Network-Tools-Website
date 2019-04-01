@@ -1,148 +1,212 @@
+*,*::after,*::before {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%; 
+}
 .jumbotron {
-  background-image: linear-gradient(to right bottom,
-    rgba(0,0,0, 0.8),
-    rgba(0,0,0, 0.1)),
-    url(images/background-photo.jpg);
+  background-image: url(images/background-photo.jpg);
   background-size: cover;
   background-attachment: fixed;
-  background-position: top;
-  position: relative;  
-  height: 750px;
+  background-position: center;
+  height: 90rem;
   border-radius: 0;
 }
 .logo {
-  width: 75px;
-  height: 80px;
+  width: 9rem;
+  height: 9.5rem;
 }
 .featured {
   color: #ffffff;
-  text-shadow: 1px 1px 5px#000000;
-  padding: 20px;
-  border-radius: 5px;
+  text-shadow: .1rem .1rem .5rem#000000;
+  padding: 2rem;
+  margin-top: 10rem;
+  border-radius: .5rem;
+  position: relative;
 }
-
 .featured h1 {
-  padding-top: 60px;
-  font-size: 4em;
+  padding-top: 6rem;
+  margin-bottom: 1.5rem;
+  font-size: 6rem;
 }
-
 .featured h2 {
-  font-size: 3em;
+  font-size: 4rem;
 }
-
 .featured p {
-  font-size: 1.5em;
-  padding-top: 20px;
+  font-size: 2rem;
+  padding-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
-
 .featured .btn {
-  text-shadow: 0px 0px 0px #000000;
+  text-shadow: 0rem 0rem 0rem #000000;
   font-weight: bold;
-  margin-top: 10px;
-  margin-right: 20px;
-  padding: .8em;
-  width: 200px;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  padding: 1.2rem;
+  width: 20rem;
+  box-shadow: 0rem .6rem .9rem #000000;
+}
+#credits {
+  position: absolute;
+  top: 70rem;
+  font-size: 1.5rem;
+}
+.list-group {
+  font-size: 2.3rem;
+}
+.list-modal, #myFeatures, .alert-warning {
+  font-size: 1.75rem;
 }
 .carousel-container {
   background: linear-gradient(to top left,#eeeeee 80%, #ffffff);
-  padding: 2%;
+  padding: 2rem;
 }
 .carousel img {
-  max-height: 900px;
-  max-width: 450px;
+  max-height: 90rem;
+  max-width: 45rem;
   margin: 0 auto;
 }
-.carousel-indicators li{
+/* .carousel-indicators li{
   background-color: #ce2626;
-}
+} */
 .carousel-control-prev-icon, .carousel-control-next-icon {
   background-color: rgba(0,0,0,.25);
 }
 h3 {
-  margin-top: 2.5%;
-  margin-bottom: 2.5%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-size: 3rem;
 }
 .usage-tips {
-  padding: 10%; 
+  padding: 1rem; 
   border: none;
+}
+.card-body {
+  font-size: 2.25rem;
 }
 .trial {
   text-align: center;
-  padding: 20px 0 40px 0;
+  padding: 2rem 0 4rem 0;
   background: linear-gradient(to top left,#eeeeee 80%, #ffffff);
 }
 .trial img {
-  width: 200px;
-  height: 70px;
-  margin: 20px;
+  width: 20rem;
+  height: 7rem;
+  margin: 2rem;
 }
 .footer {
-  background-color: #cccccc;
-  font-size: 15px;
-  padding: 10px 0;
+  background-color: #222222;
+  font-size: 1.5rem;
+  padding: 1rem 0;
 }
 
 @media(min-width: 480px) and (max-width: 768px) {
   .jumbotron {
-    height: 450px;
+    height: 60rem;
     margin: 0;
   }
   .logo {
-    width: 50px;
-    height: 50px;
+    width: 6rem;
+    height: 6rem;
   }
   .featured {
     text-align: center;
+    margin-top: 2rem;
   }
   .featured h1 {
-    padding-top: 20px;
-    font-size: 28px;
+    padding-top: 0rem;
+    font-size: 4.5rem;
   }
   .featured h2 {
-    font-size: 22px;
+    font-size: 3rem;
   }
   .featured p {
-    font-size: 16px;
-    padding-top: 5px;
+    font-size: 2rem;
+    padding-top: .5rem;
   }
   .featured .btn {
-    font-size: 16px;
-    margin-top: 5px;
-    width: 160px;
+    font-size: 1.5rem;
+    margin-top: .5rem;
+    padding: 1rem;
+    width: 16rem;
+  }
+  #credits {
+    position: absolute;
+    top: 50rem;
+    font-size: 1.25rem;
+  }
+  .list-group {
+    font-size: 1.5rem;
+  }
+  .carousel img {
+    max-height: 75rem;
+    max-width: 30rem;
+    margin: 2rem auto; 
+  }
+  h3 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+  }
+  .card-body {
+    font-size: 1.75rem;
   }
 }
 
 @media(max-width: 480px) {
   .jumbotron {
-    height: 450px;
+    height: 65.5rem;
     margin: 0;
   }
   .logo {
-    width: 40px;
-    height: 40px;
+    width: 5rem;
+    height: 5rem;
   }
   .featured {
     text-align: center;
+    margin-top: 4rem;
   }
   .featured h1 {
-    padding-top: 10px;
-    font-size: 25px;
+    padding-top: 0rem;
+    margin-bottom: 2rem;
+    font-size: 3rem;
   }
   .featured h2 {
-    font-size: 22px;
+    font-size: 2rem;
+    margin-bottom: 4rem;
   }
   .featured p {
-    font-size: 14px;
-    padding-top: 5px;
+    font-size: 1.5rem;
+    padding-top: .5rem;
+    margin-bottom: 4rem;
   }
   .featured .btn {
-    font-size: 14px;
-    margin-top: 5px;
-    width: 150px;
+    font-size: 1.5rem;
+    margin-top: .5rem;
+    padding: 1rem;
+    width: 25rem;
   }
-  .trial img {
-    width: 100px;
-    height: 35px;
-    margin: 10px;
+  #credits {
+    position: absolute;
+    top: 55rem;
+    font-size: 1.25rem;
+  }
+  .list-group {
+    font-size: 1.5rem;
+  }
+  .carousel img {
+    max-height: 75rem;
+    max-width: 30rem;
+    margin: 2rem auto; 
+  }
+  h3 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+  }
+  .card-body {
+    font-size: 1.75rem;
   }
 }
